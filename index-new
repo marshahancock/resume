@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marsha Hancock – Product Enablement & Cloud Learning Leader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Marsha Hancock – Director of Product Enablement, Technical Training, Documentation, and UX Systems for Cloud and SaaS.">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-card: #111827;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.1);
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+      --border-subtle: #1f2933;
+      --pill-bg: #1f2937;
+      --max-width: 960px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1e293b 0, #020617 55%);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(16px);
+      background: rgba(2, 6, 23, 0.85);
+    }
+
+    .nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .nav-left {
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+      background: transparent;
+      border: 1px solid transparent;
+    }
+
+    .nav-links a:hover {
+      border-color: var(--accent-soft);
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 3rem;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 2rem;
+    }
+
+    @media (max-width: 860px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 3vw, 2.5rem);
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-bottom: 0.35rem;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.1rem;
+    }
+
+    .tagline {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      max-width: 32rem;
+      margin-bottom: 1rem;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .meta span::before {
+      content: "•";
+      font-size: 0.7rem;
+      color: var(--accent);
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.9);
+      border-radius: 1rem;
+      padding: 1.3rem 1.4rem;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+      margin-bottom: 1.25rem;
+    }
+
+    .card-highlight {
+      border-color: rgba(56, 189, 248, 0.5);
+      box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.4), 0 20px 50px rgba(15, 23, 42, 0.92);
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .pill {
+      font-size: 0.8rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      background: var(--pill-bg);
+      border: 1px solid #111827;
+      white-space: nowrap;
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.75rem;
+      margin-top: 0.9rem;
+    }
+
+    .metric {
+      padding: 0.6rem 0.75rem;
+      border-radius: 0.8rem;
+      background: var(--accent-soft);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      font-size: 0.86rem;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 0.1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin-top: 0.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+
+    .section-title {
+      font-size: 0.85rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .subtle {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .job-meta {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .project-tag {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+    }
+
+    .project-title {
+      font-weight: 600;
+      margin: 0.15rem 0;
+    }
+
+    .project-body {
+      font-size: 0.9rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.75rem 1.2rem;
+      font-size: 0.9rem;
+    }
+
+    .skills-grid h3 {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 1.5rem 1.25rem 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .btn-inline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid var(--accent-soft);
+      background: rgba(15, 23, 42, 0.9);
+      font-size: 0.85rem;
+    }
+
+    .btn-inline:hover {
+      background: rgba(15, 23, 42, 1);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="nav-left">Marsha Hancock</div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Resume</a>
+      <a href="#projects">Impact Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="about">
+    <div class="layout">
+      <div>
+        <h1>Director of Product Enablement, Training, and UX Systems</h1>
+        <p class="tagline">
+          I build the systems, standards, and visual frameworks that turn complex cloud products
+          into clear, repeatable learning and documentation experiences for customers, partners,
+          and internal teams.
+        </p>
+        <div class="meta">
+          <span>Fuquay Varina, NC</span>
+          <span><a href="mailto:marshahancock@gmail.com">marshahancock@gmail.com</a></span>
+          <span><a href="tel:+19842431900">984&nbsp;243&nbsp;1900</a></span>
+          <span><a href="https://www.linkedin.com/in/marshahancock" target="_blank" rel="noreferrer">LinkedIn</a></span>
+        </div>
+
+        <div class="card card-highlight">
+          <div class="section-title">Summary</div>
+          <p>
+            Creative and technically fluent leader with deep experience across product training,
+            technical documentation, UX systems, and cloud enablement. I specialize in diagram and
+            icon standards, Figma based design systems, publishing governance, and workflow
+            automation that improve quality and reduce risk across SaaS, OCI, and multicloud
+            programs. My teams build architecture diagrams, instructional videos, and visual
+            frameworks that training and documentation groups rely on to keep pace with rapid
+            product change.
+          </p>
+          <p>
+            I am known for aligning executives, product managers, architects, and designers around
+            shared standards and metrics. I enjoy simplifying workflows, building reusable systems,
+            and turning scattered efforts into cohesive, scalable operations.
+          </p>
+          <div class="metric-row">
+            <div class="metric">
+              <strong>50% faster delivery</strong>
+              through standardized workflows, templates, and agile practices for cloud learning
+              assets.
+            </div>
+            <div class="metric">
+              <strong>$4M+ annual savings</strong>
+              by redesigning a global security training experience and improving engagement and
+              clarity.
+            </div>
+            <div class="metric">
+              <strong>Enterprise standards</strong>
+              for OCI diagrams, iconography, and publishing now used across Oracle Help Center and
+              internal training.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <div class="section-title">Focus Areas</div>
+          <div class="pill-row">
+            <span class="pill">Product Training and Enablement</span>
+            <span class="pill">Technical Documentation Systems</span>
+            <span class="pill">Cloud Learning Experiences</span>
+            <span class="pill">Architecture Diagram Governance</span>
+            <span class="pill">Figma Design Systems</span>
+            <span class="pill">Multicloud and OCI</span>
+            <span class="pill">Workflow Automation</span>
+            <span class="pill">Global Team Leadership</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="section-title">Download</div>
+          <p class="subtle">Prefer a traditional resume?</p>
+          <p>
+            <a class="btn-inline" href="Marsha-Hancock.pdf" target="_blank" rel="noreferrer">
+              <span>Download full resume (PDF)</span>
+            </a>
+          </p>
+          <p class="subtle">
+            Detailed impact case studies are available on the
+            <a href="impact.html">Impact Projects</a> page.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="experience" style="margin-top: 2.5rem;">
+    <div class="card">
+      <div class="section-title">Resume</div>
+
+      <h2>Oracle</h2>
+
+      <h3>Director, Digital Content</h3>
+      <div class="job-meta">2024 – 2025 · Global product enablement, content systems, and UX alignment</div>
+      <ul>
+        <li>Led global teams producing architecture diagrams, instructional videos, iconography, and visual frameworks used by training, documentation, and customer success groups.</li>
+        <li>Improved delivery speed and predictability by about half through standardized workflows, reusable templates, and agile practices for cloud learning assets.</li>
+        <li>Defined and implemented unified OCI architecture diagram standards adopted across product teams and Oracle Help Center, improving clarity and consistency for customers.</li>
+        <li>Partnered with Legal, Security, Product, and Brand to build governance and a certification based publishing model for Oracle Learning, strengthening accuracy and compliance.</li>
+        <li>Supported confidential pre launch work on Oracle multicloud solutions, developing cross cloud visual patterns and communication frameworks.</li>
+      </ul>
+
+      <h3>Senior Manager, Digital Content</h3>
+      <div class="job-meta">2020 – 2024 · Cloud enablement workflows and metrics</div>
+      <ul>
+        <li>Directed technical content operations supporting SaaS, OCI, and multicloud learning programs in partnership with training, documentation, and architecture teams.</li>
+        <li>Introduced a metrics framework using JIRA that evolved into an org wide analytics portal, giving executives visibility into throughput and value contribution.</li>
+        <li>Embedded structured milestones into video, diagram, and documentation workflows, improving predictability and stakeholder alignment.</li>
+        <li>Created the team’s first business continuity plan covering production, publishing, and asset management.</li>
+      </ul>
+
+      <h3>Multimedia Manager</h3>
+      <div class="job-meta">2017 – 2020 · Technical video and diagram production</div>
+      <ul>
+        <li>Led a global team of video developers and graphic designers producing product explainers, onboarding content, and technical illustrations for cloud and on premise offerings.</li>
+        <li>Standardized the UX of diagrams and videos across multiple SaaS products, improving brand consistency and learner experience.</li>
+        <li>Improved stakeholder alignment with structured intake, review, and communication practices.</li>
+      </ul>
+
+      <h3>Senior Principal Multimedia Specialist</h3>
+      <div class="job-meta">2014 – 2017 · Cross product learning paths and standards</div>
+      <ul>
+        <li>Owned strategy and development for more than ten cross product learning paths, aligning curriculum with user needs and product goals.</li>
+        <li>Established global standards for instructional video content and mentored designers on quality and consistency.</li>
+      </ul>
+
+      <h3>Senior Principal Curriculum Developer</h3>
+      <div class="job-meta">2007 – 2014 · Curriculum architecture for complex enterprise products</div>
+      <ul>
+        <li>Designed and delivered course sequences and online training for customer onboarding and long term product success.</li>
+        <li>Collaborated on the partner certification exam for Oracle WebCenter Content 11g, aligning training content with partner competencies.</li>
+      </ul>
+
+      <h3>Stellent · Senior Trainer</h3>
+      <div class="job-meta">2001 – 2007</div>
+      <ul>
+        <li>Designed and delivered product training that increased user proficiency and reduced support escalations.</li>
+      </ul>
+
+      <h3>GELCO · Trainer</h3>
+      <div class="job-meta">1999 – 2001</div>
+      <ul>
+        <li>Developed customer focused training programs and collaborated with product and support teams to keep content current.</li>
+      </ul>
+
+      <h3>Education</h3>
+      <div class="job-meta">BS in Secondary Mathematics Education · North Carolina State University · Graduated Cum Laude</div>
+    </div>
+  </section>
+
+  <section id="projects" style="margin-top: 2.5rem;">
+    <div class="card">
+      <div class="section-title">Impact Projects</div>
+      <p class="subtle">
+        These highlights summarize the systems level projects from my portfolio. Full STAR stories and
+        additional detail are available on the <a href="impact.html">Impact Projects page</a>.
+      </p>
+
+      <article>
+        <div class="project-tag">Architecture and UX Standards</div>
+        <div class="project-title">OCI Architecture Diagram Standards</div>
+        <p class="project-body">
+          Led a cross functional working group of architects, product managers, and VPs to define Oracle’s first
+          unified standards for OCI diagrams in Figma, PowerPoint, and draw.io. Documented patterns and
+          implemented governance so that training, documentation, and marketing teams could produce consistent,
+          customer friendly visuals.
+        </p>
+      </article>
+
+      <article>
+        <div class="project-tag">Design Systems</div>
+        <div class="project-title">Figma Design System for Technical Diagrams</div>
+        <p class="project-body">
+          Transitioned the team from Adobe Illustrator to Figma, building libraries of components, variants, and
+          icon sets. This improved collaboration with other design teams and allowed faster updates to diagrams
+          used in training and documentation.
+        </p>
+      </article>
+
+      <article>
+        <div class="project-tag">Iconography and Branding</div>
+        <div class="project-title">Enterprise Iconography System</div>
+        <p class="project-body">
+          Partnered with Brand Marketing to document icon standards, then created a scalable icon system in Figma
+          and Oracle Media Manager. Established intake workflows for product teams, reducing reliance on external
+          vendors and improving brand consistency across cloud services.
+        </p>
+      </article>
+
+      <article>
+        <div class="project-tag">Content Operations</div>
+        <div class="project-title">Camtasia Video Ecosystem</div>
+        <p class="project-body">
+          Replaced deprecated tooling with Camtasia, secured CSSAP approval, and introduced templates, design
+          standards, accessibility practices, and publishing rules. Improved video quality and sped up production
+          of instructional content.
+        </p>
+      </article>
+
+      <article>
+        <div class="project-tag">Knowledge Management</div>
+        <div class="project-title">SharePoint Migration and Asset Repository</div>
+        <p class="project-body">
+          Migrated documentation, wikis, and process pages to SharePoint and integrated the team’s design assets
+          into an enterprise repository. Simplified discovery, reduced duplication, and gave internal customers a
+          single entry point to find diagrams, templates, and guidance.
+        </p>
+      </article>
+
+      <article>
+        <div class="project-tag">Team and Operations</div>
+        <div class="project-title">Team Integration, Metrics, and Business Continuity</div>
+        <p class="project-body">
+          Combined individual video and design contributors into a cohesive, cross trained team with documented
+          workflows, business continuity plans, and JIRA based metrics. Leadership later expanded the metrics
+          concept into an org wide portal for executive reporting.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" style="margin-top: 2.5rem;">
+    <div class="card">
+      <div class="section-title">Skills</div>
+      <div class="skills-grid">
+        <div>
+          <h3>Enablement & Training</h3>
+          <ul>
+            <li>Product training strategy</li>
+            <li>Learning path and curriculum design</li>
+            <li>Instructional video standards</li>
+            <li>Partner and customer readiness</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Documentation & UX Systems</h3>
+          <ul>
+            <li>OCI and cloud architecture diagrams</li>
+            <li>Iconography standards and governance</li>
+            <li>Figma systems for technical visuals</li>
+            <li>Knowledge hubs in SharePoint and Confluence</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Operations & Metrics</h3>
+          <ul>
+            <li>Workflow design and automation</li>
+            <li>JIRA dashboards and reporting</li>
+            <li>Business continuity planning</li>
+            <li>Cross functional stakeholder alignment</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Cloud & Tools</h3>
+          <ul>
+            <li>Oracle SaaS and OCI concepts</li>
+            <li>Multicloud initiatives</li>
+            <li>Camtasia and multimedia production</li>
+            <li>Slack, JIRA, SharePoint, GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="margin-top: 2.5rem;">
+    <div class="card">
+      <div class="section-title">Contact</div>
+      <p>
+        I am open to leadership roles in product enablement, training and documentation, UX systems,
+        and cloud learning operations.
+      </p>
+      <p class="subtle">
+        Email is usually the fastest way to reach me.
+      </p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:marshahancock@gmail.com">marshahancock@gmail.com</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+19842431900">984&nbsp;243&nbsp;1900</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/marshahancock" target="_blank" rel="noreferrer">linkedin.com/in/marshahancock</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> Marsha Hancock. All rights reserved.
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</footer>
+</body>
+</html>
